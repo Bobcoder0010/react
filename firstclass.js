@@ -11,7 +11,14 @@ console.log (newarr);
 
 
 
+const obj = {
+    name: "bhupal",
+    address: "Itahari",
+    phone : "9824345069"
+}
+const {name, phone, address} =obj;
+const maya =[name, phone,address]
 
 
 
-
+console.log(maya);
