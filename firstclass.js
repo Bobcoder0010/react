@@ -43,11 +43,23 @@ let myName = nage < 5 && "name";
 
 
 
-<button 
-onCick={()=>{
-    console.log ("click");
-}}
->signin 
-</button>
+// {/* <button 
+// onCick={()=>{
+//     console.log ("click");
+// }}
+// >signin 
+// </button> */}
+
+//map () fieter();
+  let arr6 =["bobmarley","lname",12,"bobmarley","lname"];
 
 
+
+  let arr7= [
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem"
+ }
+]
+console.log(arr7);
