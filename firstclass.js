@@ -62,4 +62,12 @@ let myName = nage < 5 && "name";
     class : "fifthsem"
  }
 ]
-console.log(arr7);
+// console.log(arr7);
+// arr7.map((value)=>{
+//     <div>
+//         <h1>{value.name}</h1>
+//         <h1>{value.age}</h1>
+//         <h1>{value.class}</h1>
+//         <h1>{value.address}</h1>
+//     </div>
+// })
