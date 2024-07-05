@@ -32,3 +32,22 @@ for (let i =0 ;i<arr.length; i++) console.log(arr[i])
     const age=9;
     const isyes = age <10|| age ==12 ? "Yes": "No";
    console.log(isyes);
+
+
+
+
+
+
+const nage =25;
+let myName = nage < 5 && "name";
+
+
+
+<button 
+onCick={()=>{
+    console.log ("click");
+}}
+>signin 
+</button>
+
+
