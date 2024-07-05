@@ -110,3 +110,10 @@ arr7.map((value) =>{
     console.log("Class:",value.class);
     console.log("address:",value.address);
 });
+
+
+
+const myArry=["ram","shyam","hari","bobmarley","pranjal","manish","bishal"];
+myArry.filter((value)=>{
+    console.log(value ==="ram");
+})
