@@ -59,8 +59,41 @@ let myName = nage < 5 && "name";
  { 
     name : "john",
     age :"21",
-    class : "fifthsem"
- }
+    class : "fifthsem",
+    address : "basbari"
+ },
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem",
+    address : "Itahari"
+ },
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem",
+    address : "biratnagr"
+ },
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem",
+
+    address : "dharan"  
+},
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem",
+    address : "damak"
+ },
+ { 
+    name : "john",
+    age :"21",
+    class : "fifthsem",
+
+    address : "bihar"
+ },
 ]
 // console.log(arr7);
 // arr7.map((value)=>{
@@ -71,3 +104,9 @@ let myName = nage < 5 && "name";
 //         <h1>{value.address}</h1>
 //     </div>
 // })
+arr7.map((value) =>{
+    console.log("Name:",value.name);
+    console.log("Age:",value.age);
+    console.log("Class:",value.class);
+    console.log("address:",value.address);
+});
