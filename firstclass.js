@@ -115,5 +115,6 @@ arr7.map((value) =>{
 
 const myArry=["ram","shyam","hari","bobmarley","pranjal","manish","bishal"];
 myArry.filter((value)=>{
-    console.log(value ==="ram");
+    value ==="ram"? console.log(value): console.log("Not found");
+   // console.log(value ==="ram"|| value ==="hari");
 })
