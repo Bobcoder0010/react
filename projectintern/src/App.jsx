@@ -20,15 +20,8 @@ function regbtn() {
 }
   return (
     <>
-    <div>
-    <Button onClick={regbtn} text="Register"></Button>
-    {/* <Register/> */}
-
-    </div>
-    <div>
-   <Button onClick={logbtn} text="Login"></Button>
-    </div>
-   {/* <Login/> */}
+ <Login/>
+ <Register/>
        
     </>
 
