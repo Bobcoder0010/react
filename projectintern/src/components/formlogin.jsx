@@ -1,13 +1,18 @@
 import react from "react";
 import header from "./header";
+import Header from "./header";
+import Button from './Button'
 const Login = (probs) => {
     return(
         <div>
-           {/* <input type="text" placeholder="username" /> */}
+           <Header head = "Login"></Header>
            
-        <input type="Email or text" placeholder="Email or username"/><br/><br/>
-  
+           <input type="text" placeholder="username" /><br /><br />
+           <Header head = "Email or username"></Header>
+        <input type="Email" placeholder="Email or username" required/><br/><br/>
+        <Header head = "Password"></Header>
         <input type="password" placeholder="Password" /><br /><br></br>
+        <Button text = "LogIn"></Button>
         </div>
     )
 }
