@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react';
+import Button from './Button';
 
-const Button = (props)=>{
-    return(
-        <div>
-        <button className="rounded-md p-2 px-4 ml-5
-        bg-blue-500">{props.text}</button>
-
-
-        <button className="rounded-md p-2 px-4 ml-5 bg-red-500"></button>
-        </div>
-    )
-}
-export default Button
+const App = () => {
+  return (
+    <div>
+      <Button text="Click me!" color="blue" onClick={() => console.log('Blue button clicked!')} />
+      <Button text="Cancel" color="red" onClick={() => console.log('Red button clicked!')} />
+    </div>
+  )}
+  export default Button

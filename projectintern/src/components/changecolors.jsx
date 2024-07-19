@@ -1,19 +1,22 @@
-// import react from "react";
+import React, { useState, useEffect } from 'react';
 
+const ChangeColor = () => {
+  const [color, setColor] = useState('');
 
-// const ChangeColor = () => {
-//     const [color,setcolor] = useState("");
-//     useEffect(() => {
-//         document.body.style.backgroundColor = color;
-//     },[Color]) ;
-//         return(
-// <div className ='flex justify-center items-center gap-2'>
-//     <button className='p-2 px-4 bg-green-500 rounded-md'
-//         onclick={()=> setcolor("green")>}
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+  }, [color]);
 
-//     </button>
-// </div>
-//         )
-//     }
+  return (
+    <div className='flex justify-center items-center gap-2'>
+      <button
+        className='p-2 px-4 bg-green-500 rounded-md'
+        onClick={() => setColor('green')}
+      >
+        Click me!
+      </button>
+    </div>
+  )
 
- 
+}
+export default ChangeColor
