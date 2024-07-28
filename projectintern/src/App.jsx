@@ -6,6 +6,9 @@ import About from './Pages/About'
 import NavBar from './components/Navbar'
 // import {Routes,Route,Link} from "react-router-dom"
 import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom"
+
+
+
 function App() {
   const Layout = () => {
     return (
@@ -15,23 +18,34 @@ function App() {
       </div>
     )
   }
-const Route = createBrowserRouter(
+const route = createBrowserRouter(
   [
     {
       path: '/',
       element: <Layout/>,
       children: [
         { path: '/', element: <Home /> },
-        { path: 'about', element: <About /> },
-        { path: 'contact', element: <Contact /> },
-        { path: 'services', element: <Services /> },
+        { path: '/about', element: <About /> },
+        { path: '/contact', element: <Contact /> },
+        { path: '/services', element: <Services /> },
       ]
-    }
+    },{
+
+    path: '/sign-in',
+    element: <login/>
+
+  },
+  { path: '/sign-up',
+    element: <Login/>
+  },
+  {path: '*',
+    element: <div>Page not found</div>
+  },
   ]
 )
   return (
     <div>
-      <RouterProvider router={Route}/>
+      <RouterProvider router={route}/>
       {/* <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
