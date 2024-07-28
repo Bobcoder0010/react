@@ -4,6 +4,7 @@ import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import NavBar from './components/Navbar'
+import Login from './components/formlogin'
 // import {Routes,Route,Link} from "react-router-dom"
 import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom"
 
@@ -31,11 +32,11 @@ const route = createBrowserRouter(
       ]
     },{
 
-    path: '/sign-in',
-    element: <login/>
+    path: '/formlogin',
+    element: <Login/>
 
   },
-  { path: '/sign-up',
+  { path: '/formlogin',
     element: <Login/>
   },
   {path: '*',
