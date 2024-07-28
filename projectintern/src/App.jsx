@@ -9,12 +9,12 @@ import {Routes,Route,Link} from "react-router-dom"
 const App = () => {
   return (
     <div>
-      <ul>
+      {/* <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/services">Services</Link></li>
-      </ul>
+      </ul> */}
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
