@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from './Button';
 
-const App = () => {
+const Button = () => {
   return (
     <div>
       <Button text="Click me!" color="blue" onClick={() => console.log('Blue button clicked!')} />
