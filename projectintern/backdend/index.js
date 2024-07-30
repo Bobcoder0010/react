@@ -1,19 +1,16 @@
 import express from 'express';
 
 const app = express();
+app.use(express.json());
 
 
 //get post put delete 
 
-app.get("/", (req, res) => {
-    res.send('Hello World');
+app.post("/post", (req, res) => {
+    const data = req.body;
+    res.send(data);
+  
 });
-
-
-
-
-
-
 
 
 
