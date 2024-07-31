@@ -4,10 +4,10 @@ import post from './routes/post.router.js';
 const app = express();
 
 
-
-app.use("/" ,post.router);
-
 app.use(express.json());
+
+app.use("/" ,post);
+
 
 
 //get post put delete 
